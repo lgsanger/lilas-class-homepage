@@ -25,52 +25,6 @@ button:hover {
   cursor: pointer;
 }
 
-/* Top navigation */
-.site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 24px 72px 12px;
-}
-
-.logo-mark {
-  width: 32px;
-  height: 32px;
-  border-radius: 999px;
-  border: 2px solid #1b2760;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  color: #1b2760;
-}
-
-.site-nav {
-  display: flex;
-  gap: 32px;
-  font-size: 0.95rem;
-}
-
-.site-nav a {
-  position: relative;
-  padding-bottom: 4px;
-}
-
-.site-nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 1px;
-  background-color: #1b2760;
-  transition: width 0.2s ease-out;
-}
-
-.site-nav a:hover::after {
-  width: 100%;
-}
-
 /* Main hero section */
 .page-content {
   flex: 1;
@@ -92,8 +46,8 @@ button:hover {
 }
 
 .hero-subtitle {
-  margin: 0 0 28px;
-  font-size: 0.95rem;
+  margin: 0 0 48px;
+  font-size: 1.2rem;
   color: #41508f;
 }
 
@@ -103,6 +57,7 @@ button:hover {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 36px;
   align-items: flex-start;
+  margin-top: 40px;
 }
 
 .cta-card {
@@ -131,6 +86,28 @@ button:hover {
   background-color: rgba(27, 39, 96, 0.05);
   transform: translateY(-1px);
   box-shadow: 0 4px 10px rgba(19, 32, 88, 0.18);
+}
+
+.home-button {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid #17287f;
+  background-color: #17287f;
+  color: #f6ebe0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  box-shadow: 0 6px 14px rgba(23, 40, 127, 0.35);
+  transition: transform 0.1s ease, box-shadow 0.1s ease,
+    background-color 0.15s ease;
+}
+
+.home-button:hover {
+  background-color: #1e3090;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(23, 40, 127, 0.45);
 }
 
 .cta-text {
@@ -202,10 +179,6 @@ button:hover {
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
-  .site-header {
-    padding: 20px 24px 8px;
-  }
-
   .page-content {
     padding: 12px 24px 40px;
   }
