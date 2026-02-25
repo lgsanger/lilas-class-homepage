@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Class Home Page</title>
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GRDS 256 · Class Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo-mark" aria-hidden="true">*</div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="https://utk.instructure.com/">Exercises</a>
+        <a href="https://utk.instructure.com/">Project 1</a>
+        <a href="https://utk.instructure.com/">Project 2</a>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <section class="hero">
+        <h1 class="page-title" id="header">GRDS 256 Home Page</h1>
+        <p class="hero-subtitle">Lila Gsanger · Spring 2026</p>
+
+        <section class="cta-grid" aria-label="Course sections">
+          <article class="cta-card">
+            <button
+              class="pill-button"
+              onclick="window.location.href='https://utk.instructure.com/';"
+            >
+              Exercises
+            </button>
+            <p class="cta-text">
+              In class exercises and homework
+            </p>
+          </article>
+
+          <article class="cta-card">
+            <button
+              class="pill-button"
+              onclick="window.location.href='https://utk.instructure.com/';"
+            >
+              Project 1
+            </button>
+            <p class="cta-text">
+              Local, Host
+            </p>
+          </article>
+
+          <article class="cta-card">
+            <button
+              class="pill-button"
+              onclick="window.location.href='https://utk.instructure.com/';"
+            >
+              Project 2
+            </button>
+            <p class="cta-text">
+              Private, Utility
+            </p>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-border" aria-hidden="true"></div>
+      <div class="footer-inner">
+       
+        <div class="footer-brand">
+          <span class="footer-course">Graphic Design Studio 256</span>
         
-    </body>
+    </footer>
+  </body>
 </html>
